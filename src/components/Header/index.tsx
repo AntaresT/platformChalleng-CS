@@ -2,7 +2,7 @@ import Image from "next/image";
 import { BtnSignIn, BtnSignUp, Clickable, CoinPrice, Head, LinkText, Links, Navigation, RightEnd, Sign } from "./style";
 
 import coinLogo from '../../assets/Logo.svg'
-import CoinTicker from "../coinTicker";
+import CoinTicker from "../CoinTicker";
 
 export default function Header () {
   return(
