@@ -21,7 +21,6 @@ export default function Banner() {
     <Container>
 
       <BannerContent>
-      {/* Div esquerda */}
         <LeftSide>
           <Title>Lorem ipsum dolor sit amet, consectetur</Title>
           <Subtitle>
@@ -36,7 +35,6 @@ export default function Banner() {
           </CardTiny>
         </LeftSide>
 
-      {/* Div direita carousel */}
         <RightSide>
           <Swiper
             spaceBetween={30}
@@ -66,7 +64,10 @@ export default function Banner() {
         <Image 
           src={bottomBannerImg} 
           alt='bottom-banner'
-          fill={true}
+          style={{
+            width: '100%',
+            height: 'auto',
+          }}
         />
       </ImgContainer>
     </Container>
