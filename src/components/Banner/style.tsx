@@ -47,8 +47,10 @@ export const Subtitle = styled.span`
 export const SingupBtn = styled.button`
   align-items: center;
   border-radius: 32px;
+  border: none;
   background: #FBAB34;
   color: white;
+  cursor: pointer;
   display: flex;
   height: 48px;
   padding: 14px 24px;
@@ -57,6 +59,10 @@ export const SingupBtn = styled.button`
   gap: 10px;
   flex-shrink: 0; 
   width: 278px;
+
+  &:hover{
+    transform: scale(1.1);
+  }
 `
 
 export const CardTiny = styled.div`
@@ -66,14 +72,15 @@ export const CardTiny = styled.div`
 `
 
 export const CoinCard = styled.span`
+  background: #FFF6E8;
   border-radius: 4px; 
+  border-radius: 4px;
   color: #FBAB34;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
+  padding: 4px 16px;
   line-height: 32px;
-  border-radius: 4px;
-  background: #FFF6E8;
   margin-right: 18px;
 `
 
