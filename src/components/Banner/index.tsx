@@ -31,8 +31,8 @@ export default function Banner() {
           <SingupBtn>Sign up <Image src={arrow} alt='arrow' /></SingupBtn>
           <CardTiny>
             <CoinCard>Crypto</CoinCard>
-            <CoinCard>Crypto</CoinCard>
-            <CoinCard>Crypto</CoinCard>
+            <CoinCard>NFTs</CoinCard>
+            <CoinCard>Games</CoinCard>
           </CardTiny>
         </LeftSide>
 
