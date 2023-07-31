@@ -2,7 +2,8 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  height: 640px;
+  display: flex;
+  flex-direction: column;
 `
 
 export const ImgContainer = styled.div`
