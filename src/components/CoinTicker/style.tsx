@@ -1,8 +1,7 @@
-
 import styled from "styled-components"
 
 interface StockType {
-  status: boolean;
+  status?: boolean;
 }
 
 export const Container = styled.div`
