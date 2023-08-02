@@ -3,6 +3,7 @@ import Banner from '@/components/Banner'
 import Informational from '@/components/Informational'
 import TopCryptos from '@/components/TopCryptos'
 import Contact from '@/components/Contact'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Informational />
       <TopCryptos />
       <Contact />
+      <Footer />
     </>
   )
 }
