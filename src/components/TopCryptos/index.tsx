@@ -29,7 +29,7 @@ export default function TopCryptos() {
 
   return(
     <Container>
-      <Title>Top Crpytos</Title>
+      <Title>Top Cryptos</Title>
       <Table>
         <thead>
           <tr>

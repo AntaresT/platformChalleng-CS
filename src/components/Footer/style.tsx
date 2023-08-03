@@ -7,6 +7,10 @@ export const Foot = styled.footer`
   justify-content: space-between;
   height: 64px;
   padding: 0px 112px;
+
+  @media (min-width: 320px) and (max-width: 769px){
+    height: 56px;
+  }
 `
 
 export const Label = styled.label`

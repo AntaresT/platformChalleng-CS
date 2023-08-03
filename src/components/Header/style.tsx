@@ -10,6 +10,10 @@ export const Head = styled.header`
   width: 100%;
   display: flex;
   justify-content: center;
+
+  @media (min-width: 481px) and (max-width: 769px){
+    height: auto;
+  }
 `
 
 export const Navigation = styled.nav`
@@ -18,6 +22,11 @@ export const Navigation = styled.nav`
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
+
+  @media (min-width: 481px) and (max-width: 769px){
+    align-items: start;
+    margin-top: 24px;
+  }
 `
   
 export const Links = styled.div`
@@ -53,6 +62,10 @@ export const CoinPrice = styled.div`
   justify-content: flex-end;
   width: 360px;
 
+  @media (min-width: 481px) and (max-width: 1080px){
+    margin-right: 0;
+  }
+
 `
 
 export const Sign = styled.div`
@@ -69,7 +82,6 @@ export const BtnSignIn = styled.button`
   gap: 8px; 
   margin-right: 24px;
   padding: 8px 16px; 
-  height: ;
 
   &:hover {
     cursor: pointer;
@@ -101,4 +113,14 @@ export const RightEnd = styled.div`
   display: flex;
   justify-content: flex-end;
   height: auto;
+
+  @media (min-width: 769px) and (max-width: 1100px){
+    flex-direction: column-reverse;
+    margin-top: 60px;
+  }
+
+  @media (min-width: 481px) and (max-width: 768px){
+    flex-direction: column-reverse;
+    margin-top: 0px;
+  }
 `

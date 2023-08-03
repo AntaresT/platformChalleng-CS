@@ -6,6 +6,14 @@ interface StockType {
 
 export const Container = styled.div`
   width: 100%;
+
+  @media (min-width: 481px) and (max-width: 1080px){
+    position: absolute;
+    max-width: 360px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
 `
 
 export const Coin = styled.div`

@@ -27,6 +27,10 @@ export const Table = styled.table`
   border-collapse: collapse;
   text-align: start;
   width: 1216px;
+
+  @media (min-width: 320px) and (max-width: 1300px){
+    width: auto;
+  }
 `
 
 export const Tr = styled.tr<TableRowProps>`
@@ -54,6 +58,10 @@ export const Td = styled.td`
   line-height: 24px;
   padding-left: 20px;
   padding-right: 60px;
+
+  @media (min-width: 320px) and (max-width: 769px){
+    font-size: 15px;
+  }
 
 `
 

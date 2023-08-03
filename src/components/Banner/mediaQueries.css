@@ -1,0 +1,9 @@
+.c-swipper-responsivenes{
+  width: 500px;
+}
+
+@media (min-width: 481px) and (max-width: 811px){
+  .c-swipper-responsivenes{
+    width: 380px;
+  }
+};

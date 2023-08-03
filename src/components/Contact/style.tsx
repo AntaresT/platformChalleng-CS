@@ -14,6 +14,11 @@ export const Title = styled.h4`
   font-style: normal;
   font-weight: 700;
   line-height: 32px;
+  
+  @media (min-width: 320px) and (max-width: 769px){
+    font-size: 20px;
+    margin: 0;
+  }
 `
 
 export const Subtitle = styled.h2`
@@ -23,6 +28,12 @@ export const Subtitle = styled.h2`
   font-weight: 700;
   line-height: 48px;
   letter-spacing: -0.4px; 
+
+  @media (min-width: 320px) and (max-width: 769px){
+    font-size: 32px;
+    margin: 0;
+
+  }
 `
 
 export const Description = styled.p`
@@ -31,12 +42,21 @@ export const Description = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 24px; 
+
+  @media (min-width: 320px) and (max-width: 769px){
+    font-size: 16px;
+    margin-top: 16px;
+  }
 `
 
 export const RightSide = styled.div`
   display: flex;
   flex-direction: Column;
   width: 385px;
+
+  @media (min-width: 320px) and (max-width: 769px){
+    width: 385px;
+  }
 `
 
 export const LeftSide = styled.div`
@@ -69,6 +89,10 @@ export const ContactInput = styled.input`
   height: 48px;
   flex-shrink: 0; 
   padding-left: 16px;
+
+  @media (min-width: 320px) and (max-width: 769px){
+    width: 320px;
+  }
 `
 
 export const SubscribeBtn = styled.button`
@@ -92,5 +116,9 @@ export const SubscribeBtn = styled.button`
   &:hover{
     transform: scale(1.1);
     transition: all 0.5s ease;
+  }
+
+  @media (min-width: 320px) and (max-width: 769px){
+    width: 320px;
   }
 `
