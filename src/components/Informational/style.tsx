@@ -6,13 +6,27 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 120px;
+
+  @media (min-width: 320px) and (max-width: 769px){
+    flex-direction: column-reverse;
+  }
 `
 
 export const CardBlock = styled.div`
+
+  @media (min-width: 320px) and (max-width: 769px){
+    margin-top: 50px;
+  }
 `
 
 export const Above = styled.div`
   padding-right: 136px;
+  display: flex;
+
+  @media (min-width: 320px) and (max-width: 769px){
+    padding-right: 0px;
+  }
+
 `
 
 export const Below = styled.div`
@@ -40,23 +54,39 @@ export const SingupBtn = styled.button`
   &:hover{
     transform: scale(1.1);
   }
+
+  @media (min-width: 320px) and (max-width: 769px){
+    display: none;
+  }
 `
 
-export const Title = styled.h3`
+export const Title = styled.h5`
   color: #FBAB34;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 32px;
+  
+  @media (min-width: 481px) and (max-width: 769px){
+    font-size: 16px;
+    line-height: 24px;
+  }
+
 `
 
-export const Subtitle = styled.h2`
+export const Subtitle = styled.h3`
   color: #5D6670;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 48px;
   letter-spacing: -0.4px; 
+
+  @media (min-width: 481px) and (max-width: 769px){
+    font-size: 32px;
+    line-height: 40px;
+  }
+
 `
 
 export const Description = styled.p`
@@ -65,6 +95,11 @@ export const Description = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 24px; 
+
+  @media (min-width: 481px) and (max-width: 769px){
+    font-size: 16px;
+    line-height: 24px;
+  }
 `
 
 export const InfoBlock = styled.div`
@@ -73,4 +108,8 @@ export const InfoBlock = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 400px;
+
+  @media (min-width: 481px) and (max-width: 769px){
+    align-self: center;
+  }
 `

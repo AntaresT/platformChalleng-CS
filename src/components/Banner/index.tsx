@@ -9,6 +9,7 @@ import arrow from '../../assets/arrow.svg'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import './mediaQueries.css'
 
 import Image from "next/image";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -27,7 +28,7 @@ export default function Banner() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
             purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor
           </Subtitle>
-          <SingupBtn>Sign up <Image src={arrow} alt='arrow' /></SingupBtn>
+          <SingupBtn>SIGN UP NOW <Image src={arrow} alt='arrow' /></SingupBtn>
           <CardTiny>
             <CoinCard>Crypto</CoinCard>
             <CoinCard>NFTs</CoinCard>
@@ -44,16 +45,41 @@ export default function Banner() {
               disableOnInteraction: false,
             }}
             modules={[Autoplay, Pagination, Navigation]}
-            style={{width: 500}}
+            className="responsivenes"
           >
             <SwiperSlide>
-              <Image src={banner1} alt="bannerImg-1" />
+              <Image 
+                src={banner1} 
+                alt="bannerImg-1" 
+                sizes="100vw" 
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  objectFit: 'contain',
+                }}
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src={banner2} alt="bannerImg-2" />
+              <Image 
+                src={banner2} 
+                alt="bannerImg-2" 
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  objectFit: 'contain',
+                }}
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src={banner3} alt="bannerImg-3" />
+              <Image 
+                src={banner3} 
+                alt="bannerImg-3" 
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  objectFit: 'contain',
+                }}
+              />
             </SwiperSlide>
           </Swiper>
         </RightSide>

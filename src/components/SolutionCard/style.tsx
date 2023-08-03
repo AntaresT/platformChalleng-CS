@@ -11,6 +11,11 @@ export const Container = styled.div`
   align-items: flex-start;
   margin: 32px;
   width: 280px;
+
+  @media (min-width: 481px) and (max-width: 769px){
+    width: 232px;
+  }
+
 `
 
 export const Title = styled.h4`
