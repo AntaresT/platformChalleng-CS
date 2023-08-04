@@ -15,8 +15,13 @@ export const Title = styled.h4`
   font-weight: 700;
   line-height: 32px;
   
-  @media (min-width: 320px) and (max-width: 769px){
+  @media (min-width: 481px) and (max-width: 1024px){
     font-size: 20px;
+    margin: 0;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px){
+    font-size: 16px;
     margin: 0;
   }
 `
@@ -29,10 +34,14 @@ export const Subtitle = styled.h2`
   line-height: 48px;
   letter-spacing: -0.4px; 
 
-  @media (min-width: 320px) and (max-width: 769px){
+  @media (min-width: 481px) and (max-width: 1024px){
     font-size: 32px;
     margin: 0;
+  }
 
+  @media (min-width: 320px) and (max-width: 480px){
+    font-size: 24px;
+    margin: 0;
   }
 `
 
@@ -43,9 +52,14 @@ export const Description = styled.p`
   font-weight: 400;
   line-height: 24px; 
 
-  @media (min-width: 320px) and (max-width: 769px){
+  @media (min-width: 481px) and (max-width: 769px){
     font-size: 16px;
     margin-top: 16px;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px){
+    font-size: 14px;
+    margin-top: 8;
   }
 `
 
@@ -57,12 +71,20 @@ export const RightSide = styled.div`
   @media (min-width: 320px) and (max-width: 769px){
     width: 385px;
   }
+
+  @media (min-width: 320px) and (max-width: 480px){
+    margin-top: 56px;
+  }
 `
 
 export const LeftSide = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (min-width: 320px) and (max-width: 480px){
+    width: 90%;
+  }
 `
 
 export const OverImg = styled.div`
@@ -71,6 +93,12 @@ export const OverImg = styled.div`
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+
+  @media (min-width: 320px) and (max-width: 480px){
+    flex-direction: column;
+    position: inherit;
+
+  }
 `
 
 export const Label = styled.label`
@@ -119,6 +147,7 @@ export const SubscribeBtn = styled.button`
   }
 
   @media (min-width: 320px) and (max-width: 769px){
-    width: 320px;
+    width: 90%;
+    margin-bottom: 56px;
   }
 `

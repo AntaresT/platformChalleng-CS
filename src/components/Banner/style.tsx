@@ -28,6 +28,13 @@ export const LeftSide = styled.div`
     margin-right: 20px;
     width: 320px;
   }
+
+  @media (min-width: 320px) and (max-width: 480px){
+    align-items: center;
+    text-align: center;
+    margin-right: 0px;
+    width: 300px;
+  }
 `
 
 export const Title = styled.h2`
@@ -44,6 +51,12 @@ export const Title = styled.h2`
     line-height: 40px;
   }
 
+  @media (min-width: 320px) and (max-width: 480px){
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 60px;
+  }
+
 `
 
 export const Subtitle = styled.span`
@@ -56,6 +69,11 @@ export const Subtitle = styled.span`
 
   @media (min-width: 481px) and (max-width: 811px){
     font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px){
+    font-size: 14px;
     line-height: 24px;
   }
 `
@@ -113,7 +131,12 @@ export const RightSide = styled.div`
   width: 384px;
   height: 499px; 
 
-  @media (min-width: 481px) and (max-width: 811px){
+  @media (min-width: 481px) and (max-width: 1120px){
     align-items: center;
+  }
+
+  @media (min-width: 300px) and (max-width: 480px){
+    display: none;
+  }
 
 `

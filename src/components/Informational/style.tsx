@@ -7,7 +7,7 @@ export const Container = styled.div`
   justify-content: center;
   margin-top: 120px;
 
-  @media (min-width: 320px) and (max-width: 769px){
+  @media (min-width: 320px) and (max-width: 1010px){
     flex-direction: column-reverse;
   }
 `
@@ -16,6 +16,12 @@ export const CardBlock = styled.div`
 
   @media (min-width: 320px) and (max-width: 769px){
     margin-top: 50px;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px){
+    margin-top: 50px;
+    display: flex;
+    overflow: auto;
   }
 `
 
@@ -72,6 +78,13 @@ export const Title = styled.h5`
     line-height: 24px;
   }
 
+  @media (min-width: 320px) and (max-width: 480px){
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0px;
+
+  }
+
 `
 
 export const Subtitle = styled.h3`
@@ -87,6 +100,13 @@ export const Subtitle = styled.h3`
     line-height: 40px;
   }
 
+  @media (min-width: 320px) and (max-width: 480px){
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0px;
+
+  }
+
 `
 
 export const Description = styled.p`
@@ -100,6 +120,12 @@ export const Description = styled.p`
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: 320px) and (max-width: 480px){
+    font-size: 14px;
+    line-height: 24px;
+    margin: 16px 0px 0px 0px;
+  }
 `
 
 export const InfoBlock = styled.div`
@@ -109,7 +135,9 @@ export const InfoBlock = styled.div`
   justify-content: center;
   width: 400px;
 
-  @media (min-width: 481px) and (max-width: 769px){
+  @media (min-width: 320px) and (max-width: 1024px){
     align-self: center;
   }
+
+
 `
