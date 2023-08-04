@@ -14,6 +14,14 @@ export const Container = styled.div`
     right: 0;
     margin: 0 auto;
   }
+
+  @media (min-width: 300px) and (max-width: 480px){
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
 `
 
 export const Coin = styled.div`

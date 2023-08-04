@@ -10,6 +10,7 @@ export const Foot = styled.footer`
 
   @media (min-width: 320px) and (max-width: 769px){
     height: 56px;
+    justify-content: center;
   }
 `
 
@@ -19,4 +20,8 @@ export const Label = styled.label`
   font-style: normal;
   font-weight: 400;
   line-height: 16px; 
+
+  @media (min-width: 320px) and (max-width: 769px){
+    display: none;
+  }
 `

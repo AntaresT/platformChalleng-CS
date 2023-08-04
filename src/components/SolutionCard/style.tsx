@@ -12,7 +12,7 @@ export const Container = styled.div`
   margin: 32px;
   width: 280px;
 
-  @media (min-width: 481px) and (max-width: 769px){
+  @media (min-width: 481px) and (max-width: 1024px){
     width: 232px;
   }
 
