@@ -1,12 +1,17 @@
 import { apiCoin } from './api';
-import { NextRequest } from 'next/server';
 
-export async function getCoinsHeader(request: NextRequest) {
+export async function getCoinsHeader() {
   
-  const header = process.env.NEXT_PUBLIC_COIN_API_KEY;
+  const headers = {
+    'X-CoinAPI-Key':  `${process.env.NEXT_PUBLIC_COIN_API_KEY}`
+  }
 
-  const coinResponse = await apiCoin.get('/assets?filter_asset_id=BTC,ETH,DOG')
-  console.log('chamou')
+  const coinResponse = await apiCoin.get(`/ohlcv/BITSTAMP_SPOT_BTC_USD/latest?period_id=1MIN&limit={10}`
+    ,{ headers }
+  )
+
+  console.log(coinResponse, 'coin response')
+
   return coinResponse;
 
 }

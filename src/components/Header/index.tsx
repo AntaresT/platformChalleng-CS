@@ -3,8 +3,11 @@ import { BtnSignIn, BtnSignUp, Clickable, CoinPrice, Head, LinkText, Links, Navi
 
 import coinLogo from '../../assets/Logo.svg'
 import CoinTicker from "../CoinTicker";
+import { getCoinsHeader } from "@/service/cryptos";
 
 export default function Header () {
+
+
   return(
     <Head>
       <Navigation>

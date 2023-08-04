@@ -45,7 +45,7 @@ export default function Banner() {
               disableOnInteraction: false,
             }}
             modules={[Autoplay, Pagination, Navigation]}
-            className="responsivenes"
+            className="c-swipper-responsivenes"
           >
             <SwiperSlide>
               <Image 
